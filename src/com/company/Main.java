@@ -20,14 +20,14 @@ public class Main {
         // input validation loop
         boolean loopValidate = true;
         while (loopValidate){
-            System.out.println("Index is beyond my limit! Enter a valid indexNum number");
-            indexNum = input.nextInt();
-
             // exit condition
             if (indexNum < text.length()){
                 loopValidate = false;
                 System.out.println("good input");
                 System.out.println("word from indexNum 0 to specified indexNum of " + indexNum + " is " + text.substring(0,indexNum));
+            } else {
+                System.out.println("Index is beyond my limit! Enter a valid indexNum number");
+                indexNum = input.nextInt();
             }
 
         }
